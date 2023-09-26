@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LEKBsNJmIHWFvEppdvXuaa7vW3qB8IJpTvea6m0rFj0=",
+  "Source": "Saritasa.SlackApp.Web",
+  "BasePath": "_content/Saritasa.SlackApp.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

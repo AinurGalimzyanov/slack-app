@@ -1,0 +1,23 @@
+{
+  "Logging": {
+    "Console": {
+      "FormatterOptions": {
+        "JsonWriterOptions": {
+          "Indented": false
+        }
+      }
+    }
+  },
+  "ConnectionStrings": {
+    "AppDatabase": "Server={{$.rds_db_host}};Database={{$.rds_db_name}};Uid={{$.rds_db_user}};Pwd={{$.rds_db_password}};"
+  },
+  "Application": {
+      "CrmUrl": "{{$.crmUrl}}",
+      "SlackAuthToken" : "{{$.slackAuthToken}}",
+      "SlackSigningSecret" : "{{$.slackSigningSecret}}"
+  },
+  "CrmSecrets": {
+      "Password" : "{{$.crmPassword}}",
+      "Username" : "{{$.crmUsername}}"
+  }
+}

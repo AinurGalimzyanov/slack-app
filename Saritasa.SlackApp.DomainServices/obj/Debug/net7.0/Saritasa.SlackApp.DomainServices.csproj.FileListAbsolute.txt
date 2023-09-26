@@ -1,0 +1,14 @@
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\bin\Debug\net7.0\Saritasa.SlackApp.DomainServices.deps.json
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\bin\Debug\net7.0\Saritasa.SlackApp.DomainServices.dll
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\bin\Debug\net7.0\Saritasa.SlackApp.DomainServices.pdb
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\bin\Debug\net7.0\Saritasa.SlackApp.DomainServices.xml
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\Saritasa.SlackApp.DomainServices.csproj.AssemblyReference.cache
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\Saritasa.SlackApp.DomainServices.GeneratedMSBuildEditorConfig.editorconfig
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\Saritasa.SlackApp.DomainServices.AssemblyInfoInputs.cache
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\Saritasa.SlackApp.DomainServices.AssemblyInfo.cs
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\Saritasa.SlackApp.DomainServices.csproj.CoreCompileInputs.cache
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\Saritasa.SlackApp.DomainServices.dll
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\refint\Saritasa.SlackApp.DomainServices.dll
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\Saritasa.SlackApp.DomainServices.xml
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\Saritasa.SlackApp.DomainServices.pdb
+E:\cump\saritasa-crm-slack-app\src\Saritasa.SlackApp.DomainServices\obj\Debug\net7.0\ref\Saritasa.SlackApp.DomainServices.dll

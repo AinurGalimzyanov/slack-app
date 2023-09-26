@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3JchcCvTOH0I+6OoTQYReO3kAMjEhdb5wwl+kuq3wOVFrVbiYg/NVxjcAFSwMhOX4IhzwKI2mlRT4z7xacJN+A==",
+  "success": true,
+  "projectFilePath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.DomainServices\\Saritasa.SlackApp.DomainServices.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\79373\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.507\\stylecop.analyzers.unstable.1.2.0.507.nupkg.sha512"
+  ],
+  "logs": []
+}

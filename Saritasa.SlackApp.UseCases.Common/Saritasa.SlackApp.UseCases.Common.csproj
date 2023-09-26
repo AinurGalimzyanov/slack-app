@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Saritasa.SlackApp.Domain\Saritasa.SlackApp.Domain.csproj" />
+    <ProjectReference Include="..\Saritasa.SlackApp.Infrastructure.Abstractions\Saritasa.SlackApp.Infrastructure.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

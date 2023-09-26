@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Saritasa.SlackApp.Web.props" />
+</Project>

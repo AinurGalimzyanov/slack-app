@@ -1,0 +1,193 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Saritasa.Tools.Common/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net60/Saritasa.Tools.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net60/Saritasa.Tools.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Saritasa.Tools.Domain/0.8.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Saritasa.Tools.Domain.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Saritasa.Tools.Domain.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "StyleCop.Analyzers.Unstable/1.2.0.507": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "Saritasa.Tools.Common/5.0.0": {
+      "sha512": "uFoVVpFozz0R1u9nXz9yPy2v8un2cgfX9NTMPN7DIiVLaA6+D5cITSU31oTsHn9+5rcISiXMp3C0r8KO23VTYw==",
+      "type": "package",
+      "path": "saritasa.tools.common/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "icon.png",
+        "lib/net60/Saritasa.Tools.Common.dll",
+        "lib/net60/Saritasa.Tools.Common.pdb",
+        "lib/net60/Saritasa.Tools.Common.xml",
+        "lib/netstandard1.6/Saritasa.Tools.Common.dll",
+        "lib/netstandard1.6/Saritasa.Tools.Common.pdb",
+        "lib/netstandard1.6/Saritasa.Tools.Common.xml",
+        "lib/netstandard2.0/Saritasa.Tools.Common.dll",
+        "lib/netstandard2.0/Saritasa.Tools.Common.pdb",
+        "lib/netstandard2.0/Saritasa.Tools.Common.xml",
+        "lib/netstandard2.1/Saritasa.Tools.Common.dll",
+        "lib/netstandard2.1/Saritasa.Tools.Common.pdb",
+        "lib/netstandard2.1/Saritasa.Tools.Common.xml",
+        "saritasa.tools.common.5.0.0.nupkg.sha512",
+        "saritasa.tools.common.nuspec"
+      ]
+    },
+    "Saritasa.Tools.Domain/0.8.2": {
+      "sha512": "roPKm9ITXHWgRybX9q+XuO06llaID0LPwXlpsI/ko0uk/uJwHdCgxUen5SRzZxjXEkRj2dj6s9E8xCGAIxyo2A==",
+      "type": "package",
+      "path": "saritasa.tools.domain/0.8.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "icon.png",
+        "lib/net40/Saritasa.Tools.Domain.dll",
+        "lib/net40/Saritasa.Tools.Domain.pdb",
+        "lib/net40/Saritasa.Tools.Domain.xml",
+        "lib/net452/Saritasa.Tools.Domain.dll",
+        "lib/net452/Saritasa.Tools.Domain.pdb",
+        "lib/net452/Saritasa.Tools.Domain.xml",
+        "lib/netstandard2.0/Saritasa.Tools.Domain.dll",
+        "lib/netstandard2.0/Saritasa.Tools.Domain.pdb",
+        "lib/netstandard2.0/Saritasa.Tools.Domain.xml",
+        "lib/netstandard2.1/Saritasa.Tools.Domain.dll",
+        "lib/netstandard2.1/Saritasa.Tools.Domain.pdb",
+        "lib/netstandard2.1/Saritasa.Tools.Domain.xml",
+        "saritasa.tools.domain.0.8.2.nupkg.sha512",
+        "saritasa.tools.domain.nuspec"
+      ]
+    },
+    "StyleCop.Analyzers.Unstable/1.2.0.507": {
+      "sha512": "gTY3IQdRqDJ4hbhSA3e/R48oE8b/OiKfvwkt1QdNVfrJK2gMHBV8ldaHJ885jxWZfllK66soa/sdcjh9bX49Tw==",
+      "type": "package",
+      "path": "stylecop.analyzers.unstable/1.2.0.507",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.dll",
+        "analyzers/dotnet/cs/de-DE/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/en-GB/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/es-MX/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/fr-FR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pl-PL/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ru-RU/StyleCop.Analyzers.resources.dll",
+        "rulesets/StyleCopAnalyzersDefault.ruleset",
+        "stylecop.analyzers.unstable.1.2.0.507.nupkg.sha512",
+        "stylecop.analyzers.unstable.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Saritasa.Tools.Common >= 5.0.0",
+      "Saritasa.Tools.Domain >= 0.8.2",
+      "StyleCop.Analyzers.Unstable >= 1.2.0.507"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\79373\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj",
+      "projectName": "Saritasa.SlackApp.Domain",
+      "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj",
+      "packagesPath": "C:\\Users\\79373\\.nuget\\packages\\",
+      "outputPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\79373\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "Saritasa.Tools.Common": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "Saritasa.Tools.Domain": {
+            "target": "Package",
+            "version": "[0.8.2, )"
+          },
+          "StyleCop.Analyzers.Unstable": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.2.0.507, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Saritasa.SlackApp.Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="T:Saritasa.SlackApp.Infrastructure.CrmClient">
+            <summary>
+            Crm client.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.CrmClient.#ctor(RestSharp.RestClient,Microsoft.Extensions.Options.IOptions{Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.CrmSecretsOptions},Microsoft.Extensions.Options.IOptions{Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.AppSettings},AutoMapper.IMapper)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="client">Client.</param>
+            <param name="secretOptions">Secret options.</param>
+            <param name="appSettings">App settings.</param>
+            <param name="mapper">Mapper.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.CrmClient.GetUserAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.CrmClient.GetDailyStatsAsync(System.Int32,System.DateOnly,System.DateOnly,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.CrmClient.GetPlannerAsync(System.Int32,System.DateOnly,System.DateOnly,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.CrmClientMappingProfile">
+            <summary>
+            Crm client mapping profile.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.CrmClientMappingProfile.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerData">
+            <summary>
+            Crm planner data.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerData.CrmPlannerResourceCollection">
+            <summary>
+            Crm planner resources collection.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerDto">
+            <summary>
+            Crm planner dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerDto.CrmPlannerData">
+            <summary>
+            Crm planner data collection.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerResource">
+            <summary>
+            Crm planner resource.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerResource.ProjectName">
+            <summary>
+            Project name.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerResource.AssignedHours">
+            <summary>
+            Assigned hours.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerResource.SpentMinutes">
+            <summary>
+            Spent minutes.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Dtos.Planner.CrmPlannerResource.EditedAt">
+            <summary>
+            Edited at.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.SlackMessageSender">
+            <inheritdoc />
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.SlackMessageSender.#ctor(SlackNet.ISlackApiClient)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.SlackMessageSender.SendMessageAsync(SlackNet.WebApi.Message,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.SlackViewPublisher">
+            <inheritdoc />
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.SlackViewPublisher.#ctor(SlackNet.ISlackApiClient)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.SlackViewPublisher.PublishViewAsync(System.String,SlackNet.HomeViewDefinition,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.SlackViewService">
+            <inheritdoc />
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.SlackViewService.GetHomePage">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

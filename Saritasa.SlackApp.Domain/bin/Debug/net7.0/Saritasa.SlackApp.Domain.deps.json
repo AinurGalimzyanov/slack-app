@@ -1,0 +1,66 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Saritasa.SlackApp.Domain/1.0.0": {
+        "dependencies": {
+          "Saritasa.Tools.Common": "5.0.0",
+          "Saritasa.Tools.Domain": "0.8.2",
+          "StyleCop.Analyzers.Unstable": "1.2.0.507"
+        },
+        "runtime": {
+          "Saritasa.SlackApp.Domain.dll": {}
+        }
+      },
+      "Saritasa.Tools.Common/5.0.0": {
+        "runtime": {
+          "lib/net60/Saritasa.Tools.Common.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.710"
+          }
+        }
+      },
+      "Saritasa.Tools.Domain/0.8.2": {
+        "runtime": {
+          "lib/netstandard2.1/Saritasa.Tools.Domain.dll": {
+            "assemblyVersion": "0.8.0.0",
+            "fileVersion": "0.8.2.659"
+          }
+        }
+      },
+      "StyleCop.Analyzers.Unstable/1.2.0.507": {}
+    }
+  },
+  "libraries": {
+    "Saritasa.SlackApp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Saritasa.Tools.Common/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uFoVVpFozz0R1u9nXz9yPy2v8un2cgfX9NTMPN7DIiVLaA6+D5cITSU31oTsHn9+5rcISiXMp3C0r8KO23VTYw==",
+      "path": "saritasa.tools.common/5.0.0",
+      "hashPath": "saritasa.tools.common.5.0.0.nupkg.sha512"
+    },
+    "Saritasa.Tools.Domain/0.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-roPKm9ITXHWgRybX9q+XuO06llaID0LPwXlpsI/ko0uk/uJwHdCgxUen5SRzZxjXEkRj2dj6s9E8xCGAIxyo2A==",
+      "path": "saritasa.tools.domain/0.8.2",
+      "hashPath": "saritasa.tools.domain.0.8.2.nupkg.sha512"
+    },
+    "StyleCop.Analyzers.Unstable/1.2.0.507": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gTY3IQdRqDJ4hbhSA3e/R48oE8b/OiKfvwkt1QdNVfrJK2gMHBV8ldaHJ885jxWZfllK66soa/sdcjh9bX49Tw==",
+      "path": "stylecop.analyzers.unstable/1.2.0.507",
+      "hashPath": "stylecop.analyzers.unstable.1.2.0.507.nupkg.sha512"
+    }
+  }
+}

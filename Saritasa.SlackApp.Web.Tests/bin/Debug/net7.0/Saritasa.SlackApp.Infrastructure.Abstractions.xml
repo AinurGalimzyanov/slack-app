@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Saritasa.SlackApp.Infrastructure.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Converters.FirstElementArrayConverter`1">
+            <summary>
+            Takes the first element in the array.
+            </summary>
+            <typeparam name="T">Type of work.</typeparam>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Converters.FirstElementArrayConverter`1.WriteJson(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Converters.FirstElementArrayConverter`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,`0,System.Boolean,Newtonsoft.Json.JsonSerializer)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.CrmDailyStatusDto">
+            <summary>
+            Data about user daily.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.CrmDailyStatusDto.Data">
+            <summary>
+            User data.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.DailyStatusData">
+            <summary>
+            Same-day data.
+            </summary>
+            <param name="Date">Date.</param>
+            <param name="SpentMinutes">Spent user minutes.</param>
+            <param name="CapacityHours">Capacity hours.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.DailyStatusData.#ctor(System.DateTime,System.Double,System.Double)">
+            <summary>
+            Same-day data.
+            </summary>
+            <param name="Date">Date.</param>
+            <param name="SpentMinutes">Spent user minutes.</param>
+            <param name="CapacityHours">Capacity hours.</param>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.DailyStatusData.Date">
+            <summary>Date.</summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.DailyStatusData.SpentMinutes">
+            <summary>Spent user minutes.</summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.DailyStatusData.CapacityHours">
+            <summary>Capacity hours.</summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.CrmUserDto">
+            <summary>
+            Data about user.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.CrmUserDto.Data">
+            <summary>
+            User data.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.UserData">
+            <summary>
+            User data.
+            </summary>
+            <param name="UserId">User id.</param>
+            <param name="FirstName">First name.</param>
+            <param name="LastName">Last name.</param>
+            <param name="PrimaryEmail">Email.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.UserData.#ctor(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            User data.
+            </summary>
+            <param name="UserId">User id.</param>
+            <param name="FirstName">First name.</param>
+            <param name="LastName">Last name.</param>
+            <param name="PrimaryEmail">Email.</param>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.UserData.UserId">
+            <summary>User id.</summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.UserData.FirstName">
+            <summary>First name.</summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.UserData.LastName">
+            <summary>Last name.</summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.UserData.PrimaryEmail">
+            <summary>Email.</summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.Planner.AssignedProjectDto">
+            <summary>
+            Assigned project dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.Planner.AssignedProjectDto.ProjectName">
+            <summary>
+            Project name.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.Planner.AssignedProjectDto.AssignedTime">
+            <summary>
+            Assigned hours.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.Planner.AssignedProjectDto.TimeSpent">
+            <summary>
+            Spent minutes.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.Planner.AssignedProjectDto.EditedAt">
+            <summary>
+            Edited at.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.Planner.PlannerDto">
+            <summary>
+            Planner dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.Planner.PlannerDto.AssignedProjects">
+            <summary>
+            Assigned project dto collection.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.TokenDto">
+            <summary>
+            Token dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Dto.TokenDto.AccessToken">
+            <summary>
+            Access token.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.ICrmClient">
+            <summary>
+            Interface crm client.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.ICrmClient.GetUserAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            User data retrieval method.
+            </summary>
+            <param name="email">Email.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+            <returns>Crm user dto.</returns>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.ICrmClient.GetDailyStatsAsync(System.Int32,System.DateOnly,System.DateOnly,System.Threading.CancellationToken)">
+            <summary>
+            Method of obtaining user daily data.
+            </summary>
+            <param name="userId">User id.</param>
+            <param name="dateFrom">Date from.</param>
+            <param name="dateTo">Date to.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+            <returns>Crm daily status dto.</returns>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.ICrmClient.GetPlannerAsync(System.Int32,System.DateOnly,System.DateOnly,System.Threading.CancellationToken)">
+            <summary>
+            Get planner data for user.
+            </summary>
+            <param name="userId">User id.</param>
+            <param name="dateFrom">Date from.</param>
+            <param name="dateTo">Date to.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.AppSettings">
+            <summary>
+            Global application settings.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.AppSettings.SlackAuthToken">
+            <summary>
+            Slack auth token.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.AppSettings.SlackSigningSecret">
+            <summary>
+            Slack signing secret.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.AppSettings.CrmUrl">
+            <summary>
+            Crm url.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.CrmSecretsOptions">
+            <summary>
+            Secrets for auth user.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.CrmSecretsOptions.Password">
+            <summary>
+            Password.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.Options.CrmSecretsOptions.Username">
+            <summary>
+            User name.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.IAppDbContext">
+            <summary>
+            Application abstraction for unit of work.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.IAppDbContext.Chats">
+            <summary>
+            List of registered chats.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.IDbContextWithSets">
+            <summary>
+            Database context that can retrieve entities collection by providing type.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.IDbContextWithSets.Set``1">
+            <summary>
+            Get the set of entities by type.
+            </summary>
+            <typeparam name="TEntity">Entity type.</typeparam>
+            <returns>Set of entities.</returns>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.IDbContextWithSets.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>
+            Save pending changes.
+            </summary>
+            <param name="cancellationToken">Token to cancel the request.</param>
+            <returns>Number of affected rows.</returns>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.Events.AppHomeOpened">
+            <summary>
+            App home opened event.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.Events.AppHomeOpened.UserId">
+            <summary>
+            User id.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.Events.AppHomeOpened.Tab">
+            <summary>
+            Tab.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.ActionDto">
+            <summary>
+            Actions.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.ActionDto.ActionId">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.CheckboxesWeekdays">
+            <summary>
+            Checkboxes weekdays.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.CheckboxesWeekdays.CheckboxesWeekdaysValue">
+            <summary>
+            Checkboxes weekdays.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.CheckboxesWeekdaysDto">
+            <summary>
+            Checkboxes weekdays.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.CheckboxesWeekdaysDto.SelectedOption">
+            <summary>
+            Selected options.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.HomePagePayloadDto">
+            <summary>
+            Payloads that come from the home page
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.HomePagePayloadDto.User">
+            <summary>
+            User.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.HomePagePayloadDto.View">
+            <summary>
+            View.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.HomePagePayloadDto.Actions">
+            <summary>
+            Action.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.SelectCommand">
+            <summary>
+            Select command.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.SelectCommand.SelectCommandValue">
+            <summary>
+            Select command.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.SelectCommandDto">
+            <summary>
+            Select events dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.SelectCommandDto.SelectedOption">
+            <summary>
+            Selected options.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.SelectedOptionDto">
+            <summary>
+            Selected option.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.SelectedOptionDto.Value">
+            <summary>
+            Value.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.StateDto">
+            <summary>
+            State.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.StateDto.Values">
+            <summary>
+            Values.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.Timepicker">
+            <summary>
+            Timepicker.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.Timepicker.TimepickerValue">
+            <summary>
+            Timepicker.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.TimepickerDto">
+            <summary>
+            Timepicker.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.TimepickerDto.SelectedTime">
+            <summary>
+            Selected time.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.UserDto">
+            <summary>
+            User.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.UserDto.Id">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.UserDto.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.ValuesDto">
+            <summary>
+            Values.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.ValuesDto.Timepicker">
+            <summary>
+            Timepicker.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.ValuesDto.SelectCommand">
+            <summary>
+            Select events.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.ValuesDto.CheckboxesWeekdays">
+            <summary>
+            Checkboxes weekdays.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.ViewDto" -->
+        <member name="P:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.ViewDto.State">
+            <summary>
+            State.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackMessageSender">
+            <summary>
+            Message sender for slack app.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackMessageSender.SendMessageAsync(SlackNet.WebApi.Message,System.Threading.CancellationToken)">
+            <summary>
+            Send message to slack app.
+            </summary>
+            <param name="message">Message.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackViewPublisher">
+            <summary>
+            View publisher for slack app.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackViewPublisher.PublishViewAsync(System.String,SlackNet.HomeViewDefinition,System.Threading.CancellationToken)">
+            <summary>
+            Publish view for slack app.
+            </summary>
+            <param name="userId">User id.</param>
+            <param name="viewDefinition">View definition.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackViewService">
+            <summary>
+            Page getter for slack home.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackViewService.GetHomePage">
+            <summary>
+            Get home page.
+            </summary>
+            <returns>HomeViewDefinition.</returns>
+        </member>
+        <member name="T:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.SlackEventTypes">
+            <summary>
+            Provides a list of used slack events.
+            </summary>
+        </member>
+        <member name="F:Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.SlackEventTypes.HomePageOpened">
+            <summary>
+            Home page opened.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.ModelBinder.PayloadModelBinder`1">
+            <summary>
+            Home payload model binder.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.ModelBinder.PayloadModelBinder`1.BindModelAsync(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

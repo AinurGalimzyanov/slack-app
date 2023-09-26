@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Saritasa.SlackApp.DomainServices</name>
+    </assembly>
+    <members>
+        <member name="T:Saritasa.SlackApp.DomainServices.Store.ProductSkuValidator">
+            <summary>
+            Product SKU validator.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.DomainServices.Store.ProductSkuValidator.IsValid(System.String)">
+            <summary>
+            Simple SKU validator.
+            </summary>
+            <param name="sku">SKU.</param>
+            <returns>True if SKU is valid, false otherwise.</returns>
+        </member>
+    </members>
+</doc>

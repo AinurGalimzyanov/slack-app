@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Saritasa.SlackApp.Web.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Saritasa.SlackApp.Web.Tests.AutoMapperTests">
+            <summary>
+            Test for AutoMapper configuration.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Tests.AutoMapperTests.AutoMapper_Configuration_Valid">
+            <summary>
+            Verify that automapper configuration is valid.
+            </summary>
+        </member>
+    </members>
+</doc>

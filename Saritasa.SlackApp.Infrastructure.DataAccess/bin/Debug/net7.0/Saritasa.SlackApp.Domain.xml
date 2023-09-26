@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Saritasa.SlackApp.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Saritasa.SlackApp.Domain.Slack.Chat">
+            <summary>
+            A slack chat - a channel or a direct channel with a user.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Domain.Slack.Chat.Id">
+            <summary>
+            Chat id.
+            </summary>
+        </member>
+    </members>
+</doc>

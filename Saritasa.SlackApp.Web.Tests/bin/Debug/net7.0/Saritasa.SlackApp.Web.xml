@@ -1,0 +1,679 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Saritasa.SlackApp.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Saritasa.SlackApp.Web.BackgroundJobRunner.BackgroundSlackRunner">
+            <summary>
+            Background job runner.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.BackgroundJobRunner.BackgroundSlackRunner.#ctor(MediatR.IMediator,Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackMessageSender,Microsoft.Extensions.Logging.ILogger{Saritasa.SlackApp.Web.BackgroundJobRunner.BackgroundSlackRunner})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="mediator">Mediator.</param>
+            <param name="slackMessageSender">Slack message sender.</param>
+            <param name="logger">Logger.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.BackgroundJobRunner.BackgroundSlackRunner.Execute(Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQuery,System.Threading.CancellationToken)">
+            <summary>
+            Executes background job.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.BackgroundJobRunner.BackgroundSlackRunner.Execute(Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.GetNonBillableDaysQuery,System.Threading.CancellationToken)">
+            <summary>
+            Executes background job.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Commands.Seed">
+            <summary>
+            Seed command. It is used to run seeders in Infrastructure.Seeders namespace. It calls
+            the Seed method of seeder with arguments that user passed thru command line. Required arguments are
+            Name (class name) and Count.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Commands.Seed.Name">
+            <summary>
+            The name (class) of the seeder.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Commands.Seed.Count">
+            <summary>
+            Number of objects to generate.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Commands.Seed.RemainingArguments">
+            <summary>
+            Remaining not parsed arguments.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Commands.Seed.#ctor(Microsoft.Extensions.Logging.ILogger{Saritasa.SlackApp.Web.Commands.Seed},System.IServiceProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Saritasa.SlackApp.Web.Commands.Seed" /> class.
+            </summary>
+            <param name="logger">Logger.</param>
+            <param name="serviceProvider">Service provider.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Commands.Seed.OnExecuteAsync">
+            <summary>
+            Command line application execution callback.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Commands.Seed.ParseRemainingArguments">
+            <summary>
+            Parse arguments like "--argName=10" to dictionary "argname":10.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Dtos.EventDto">
+            <summary>
+            Event dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.EventDto.Type">
+            <summary>
+            Type.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.EventDto.Challenge">
+            <summary>
+            Challenge.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.EventDto.Token">
+            <summary>
+            Token.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.EventDto.Event">
+            <summary>
+            Event.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.EventDto.EventType">
+            <summary>
+            Event type.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Dtos.EventType">
+            <summary>
+            Event type.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.EventType.Type">
+            <summary>
+            Type.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Dtos.PlannerInputDto">
+            <summary>
+            Planner input dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.PlannerInputDto.Email">
+            <summary>
+            Email.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.PlannerInputDto.UserId">
+            <summary>
+            User id in slack.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Dtos.SlackPayloadsDto">
+            <summary>
+            Payloads slack dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.SlackPayloadsDto.UserId">
+            <summary>
+            User id.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.SlackPayloadsDto.Text">
+            <summary>
+            Text.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.SlackPayloadsDto.ChannelId">
+            <summary>
+            Channel id.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Dtos.UserNotifications">
+            <summary>
+            User-selected notification configurations.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.UserNotifications.UserId">
+            <summary>
+            User id.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.UserNotifications.Command">
+            <summary>
+            Command.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.UserNotifications.Button">
+            <summary>
+            Button.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.UserNotifications.NoticeTime">
+            <summary>
+            Notice time.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Controllers.Dtos.UserNotifications.NoticeDays">
+            <summary>
+            Notice days.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Enums.Command">
+            <summary>
+            Event enum.
+            </summary>
+        </member>
+        <member name="F:Saritasa.SlackApp.Web.Controllers.Enums.Command.Planner">
+            <summary>
+            Planner.
+            </summary>
+        </member>
+        <member name="F:Saritasa.SlackApp.Web.Controllers.Enums.Command.CheckJobs">
+            <summary>
+            Check jobs.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Enums.HomeButton">
+            <summary>
+            Home page buttons.
+            </summary>
+        </member>
+        <member name="F:Saritasa.SlackApp.Web.Controllers.Enums.HomeButton.DailyButton">
+            <summary>
+            Daily button.
+            </summary>
+        </member>
+        <member name="F:Saritasa.SlackApp.Web.Controllers.Enums.HomeButton.SpecificDaysButton">
+            <summary>
+            Specific days button.
+            </summary>
+        </member>
+        <member name="F:Saritasa.SlackApp.Web.Controllers.Enums.HomeButton.UnsubscribeButton">
+            <summary>
+            Unsubscribe button.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Mappers.PayloadDtoMappingProfile">
+            <summary>
+            Mapping Request to GetNonBillableDaysQuery.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.Mappers.PayloadDtoMappingProfile.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.Mappers.UserNotificationsMappingProfile">
+            <summary>
+            Mapping HomePayloadDto to AppNotificationCommand.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.Mappers.UserNotificationsMappingProfile.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.MetaController">
+            <summary>
+            Contains methods related to application info.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.MetaController.GetAppVersion">
+            <summary>
+            Get application version.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Controllers.SlackController">
+            <summary>
+            Slack api.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.SlackController.#ctor(Saritasa.SlackApp.Web.BackgroundJobRunner.BackgroundSlackRunner,AutoMapper.IMapper,MediatR.IMediator)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.SlackController.CheckJobs(Saritasa.SlackApp.Web.Controllers.Dtos.SlackPayloadsDto,System.Threading.CancellationToken)">
+            <summary>
+            Check jobs.
+            </summary>
+            <param name="payloadsDto">Payloads slack dto.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.SlackController.PlannerCommand(Saritasa.SlackApp.Web.Controllers.Dtos.PlannerInputDto,System.Threading.CancellationToken)">
+            <summary>
+            Planner command action.
+            </summary>
+            <param name="plannerInputDto">Planner input dto.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.SlackController.HomeEvents(Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.HomeDtos.HomePagePayloadDto)">
+            <summary>
+            Events that take place on the home page.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Controllers.SlackController.Events(Saritasa.SlackApp.Web.Controllers.Dtos.EventDto)">
+            <summary>
+            Events in slack app.
+            </summary>
+            <param name="eventDto">Current event.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Converters.DtoToStringConverter">
+            <summary>
+            Dto to string converter.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Converters.DtoToStringConverter.MapUserDaysToString(System.Collections.Generic.IReadOnlyCollection{Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.Dto.UserDayDto})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nonBillableDays">Non billable days.</param>
+            <returns>Dto converted to string.</returns>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Converters.DtoToStringConverter.ConvertToString(Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQueryResultDto)">
+            <summary>
+            Converts dto to string.
+            </summary>
+            <param name="getPlannerQueryResultDto">Get planner query result dto.</param>
+            <returns>Dto converted to string.</returns>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.DependencyInjection.ApplicationModule">
+            <summary>
+            Application specific dependencies.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.DependencyInjection.ApplicationModule.Register(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Register dependencies.
+            </summary>
+            <param name="services">Services.</param>
+            <param name="configuration">Configuration.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.DependencyInjection.AutoMapperModule">
+            <summary>
+            Register AutoMapper dependencies.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.DependencyInjection.AutoMapperModule.Register(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register dependencies.
+            </summary>
+            <param name="services">Services.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.DependencyInjection.MediatRModule">
+            <summary>
+            Register Mediator as dependency.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.DependencyInjection.MediatRModule.Register(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register dependencies.
+            </summary>
+            <param name="services">Services.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.DependencyInjection.SystemModule">
+            <summary>
+            System specific dependencies.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.DependencyInjection.SystemModule.Register(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register dependencies.
+            </summary>
+            <param name="services">Services.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Dtos.AppVersionDto">
+            <summary>
+            DTO for application version.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Infrastructure.Dtos.AppVersionDto.InformationalVersion">
+            <summary>
+            Information version.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Infrastructure.Dtos.AppVersionDto.AssemblyVersion">
+            <summary>
+            Assembly version.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ApiExceptionMiddleware">
+            <summary>
+            Exception handling middleware. In general:
+            ValidationException => 400 with additional "errors" property.
+            DomainException => 400.
+            _ => 500 with stack trace.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ApiExceptionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper,Microsoft.Extensions.Logging.ILogger{Saritasa.SlackApp.Web.Infrastructure.Middlewares.ApiExceptionMiddleware},Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ApiExceptionMiddleware" /> class.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ApiExceptionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invokes the next middleware.
+            </summary>
+            <param name="httpContext">HTTP context.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ProblemFieldDto">
+            <summary>
+            Problem field DTO.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ProblemFieldDto.Field">
+            <summary>
+            Field name.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ProblemFieldDto.Messages">
+            <summary>
+            Field messages.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ProblemFieldDto.Empty">
+            <summary>
+            Problem field with no messages.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ProblemFieldDto.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="field">Field name.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Middlewares.ProblemFieldDto.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="field">Field name.</param>
+            <param name="messages">Messages.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.ApiBehaviorOptionsSetup">
+            <summary>
+            API behavior setup. In this behavior we override default 400 errors handler to
+            use another "errors" field of <see cref="T:Microsoft.AspNetCore.Mvc.ValidationProblemDetails" />.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.ApiBehaviorOptionsSetup.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="code">Optional code to include into response.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.ApiBehaviorOptionsSetup.Setup(Microsoft.AspNetCore.Mvc.ApiBehaviorOptions)">
+            <summary>
+            Setup API behavior.
+            </summary>
+            <param name="options">API behavior options.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.CorsOptionsSetup">
+            <summary>
+            CORS options setup.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.CorsOptionsSetup.#ctor(System.Boolean,System.String[])">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="isDevelopment">Is development mode enabled.</param>
+            <param name="frontendOrigins">Frontend origins.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.CorsOptionsSetup.Setup(Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions)">
+            <summary>
+            Setup CORS method.
+            </summary>
+            <param name="options">CORS options.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.DatabaseInitializer">
+            <summary>
+            Contains database migration helper methods.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.DatabaseInitializer.#ctor(Saritasa.SlackApp.Infrastructure.DataAccess.AppDbContext)">
+            <summary>
+            Database initializer. Performs migration and data seed.
+            </summary>
+            <param name="appDbContext">Data context.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.DatabaseInitializer.InitializeAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.DbContextOptionsSetup">
+            <summary>
+            Database context setup.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.DbContextOptionsSetup.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="connectionString">Connection string.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.DbContextOptionsSetup.Setup(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Setup database context.
+            </summary>
+            <param name="options">Options.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.HealthCheck.HealthCheckModule">
+            <summary>
+            Module responsible for configuring application health checks.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.HealthCheck.HealthCheckModule.Register(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)">
+            <summary>
+            Register health check endpoints.
+            </summary>
+            <param name="endpoints">Endpoints builder.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.HealthCheck.HealthCheckOptionsSetup">
+            <summary>
+            The class returns configured health check.
+            More health checks can be found here https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks .
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.HealthCheck.HealthCheckOptionsSetup.Setup(Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions)">
+            <summary>
+            Returns <see cref="T:Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions" />.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.JsonOptionsSetup">
+            <summary>
+            JSON options setup.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.JsonOptionsSetup.Setup(Microsoft.AspNetCore.Mvc.JsonOptions)">
+            <summary>
+            Setup method.
+            </summary>
+            <param name="options">JSON options.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.LoggingOptionsSetup">
+            <summary>
+            Logging setup for application.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.LoggingOptionsSetup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="configuration">Configuration.</param>
+            <param name="environment">Host environment.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.LoggingOptionsSetup.Setup(Microsoft.Extensions.Logging.ILoggingBuilder)">
+            <summary>
+            Setup logging.
+            </summary>
+            <param name="options">Logging builder.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.SlackOptionsSetup">
+            <summary>
+            Slack options setup.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.SlackOptionsSetup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="configuration">Configuration.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.SlackOptionsSetup.Setup(SlackNet.Extensions.DependencyInjection.ServiceCollectionSlackServiceConfiguration)">
+            <summary>
+            Setup slack service.
+            </summary>
+            <param name="slackConfiguration">Slack configuration.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.SlackOptionsSetup.Register(SlackNet.AspNetCore.SlackEndpointConfiguration)">
+            <summary>
+            Register slack to middleware.
+            </summary>
+            <param name="endpointConfiguration">Endpoint Configuration.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.EnumDescriptionSchemaFilter">
+            <summary>
+            A filter that adds descriptions of enums depending on their name.
+            It also adds additional descriptions if the enum elements have the attribute
+            <see cref="T:System.ComponentModel.DescriptionAttribute" />.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.EnumDescriptionSchemaFilter.Apply(Microsoft.OpenApi.Models.OpenApiSchema,Swashbuckle.AspNetCore.SwaggerGen.SchemaFilterContext)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerEnumDescriptionSchemaOperationFilter">
+            <summary>
+            A filter that adds descriptions of enums depending on their name.
+            It also adds additional descriptions if the enum elements have the attribute
+            <see cref="T:System.ComponentModel.DescriptionAttribute" />.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerEnumDescriptionSchemaOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiSchema,Swashbuckle.AspNetCore.SwaggerGen.SchemaFilterContext)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerExampleSetterSchemaFilter">
+            <summary>
+            Generates standard example for Swagger document properties. For example it puts
+            correct values for "address1", "state", "email" fields.
+            </summary>
+        </member>
+        <member name="F:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerExampleSetterSchemaFilter.propertyNameExampleMap">
+            <summary>
+            Maps property name to example value.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerExampleSetterSchemaFilter.Apply(Microsoft.OpenApi.Models.OpenApiSchema,Swashbuckle.AspNetCore.SwaggerGen.SchemaFilterContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerGenOptionsSetup">
+            <summary>
+            Swagger generation options.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerGenOptionsSetup.Setup(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            Setup.
+            </summary>
+            <param name="options">Swagger generation options.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerSecurityRequirementsOperationFilter">
+            <summary>
+            Automatically adds information about authorization requirements for API endpoints.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerSecurityRequirementsOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerUIOptionsSetup">
+            <summary>
+            Swagger UI options.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Startup.Swagger.SwaggerUIOptionsSetup.Setup(Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIOptions)">
+            <summary>
+            Setup.
+            </summary>
+            <param name="options">Swagger generation options.</param>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Infrastructure.Web.SystemTextJsonHelper">
+            <summary>
+            System JSON helper that implements <see cref="T:Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper" /> interface.
+            </summary>
+            <remarks>
+            Source:
+            https://github.com/dotnet/aspnetcore/blob/master/src/Mvc/Mvc.ViewFeatures/src/Rendering/SystemTextJsonHelper.cs .
+            </remarks>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Web.SystemTextJsonHelper.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Http.Json.JsonOptions})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="options">JSON options.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Infrastructure.Web.SystemTextJsonHelper.Serialize(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Program">
+            <summary>
+            Entry point class.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Program.Main(System.String[])">
+            <summary>
+            Entry point method.
+            </summary>
+            <param name="args">Program arguments.</param>
+        </member>
+        <member name="P:Saritasa.SlackApp.Web.Program.Urls">
+            <summary>
+            This options is there to allow running the application with `--urls` parameter.
+            https://paketo.io/docs/reference/dotnet-core-reference/#self-contained-deployment-and-framework-dependent-executables.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Program.OnExecuteAsync">
+            <summary>
+            Command line application execution callback.
+            </summary>
+            <returns>Exit code.</returns>
+        </member>
+        <member name="T:Saritasa.SlackApp.Web.Startup">
+            <summary>
+            Entry point for ASP.NET Core app.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Entry point for web application.
+            </summary>
+            <param name="configuration">Global configuration.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure application services on startup.
+            </summary>
+            <param name="services">Services to configure.</param>
+            <param name="environment">Application environment.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.Web.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure web application.
+            </summary>
+            <param name="app">Application builder.</param>
+            <param name="environment">Application environment.</param>
+        </member>
+    </members>
+</doc>

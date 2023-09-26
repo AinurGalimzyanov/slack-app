@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Saritasa.SlackApp.UseCases.Common</name>
+    </assembly>
+    <members>
+        <member name="T:Saritasa.SlackApp.UseCases.Common.Pagination.PageQueryFilter">
+            <summary>
+            Base class for filters that contains page, page size and sorting entries.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Common.Pagination.PageQueryFilter.Page">
+            <summary>
+            Page number to return. Starts with 1.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Common.Pagination.PageQueryFilter.PageSize">
+            <summary>
+            Required page size (amount of items returned at a time).
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Common.Pagination.PageQueryFilter.OrderBy">
+            <summary>
+            Specifies results ordering logic. Supporting fields for sorting: id, date.
+            For sort descending use sort_field:desc. For example, id:desc.
+            </summary>
+        </member>
+    </members>
+</doc>

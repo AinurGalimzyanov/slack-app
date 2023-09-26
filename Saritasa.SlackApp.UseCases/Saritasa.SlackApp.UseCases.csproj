@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.9" />
+    <PackageReference Include="NodaTime" Version="3.1.9" />
+    <PackageReference Include="Saritasa.Tools.EntityFrameworkCore" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Saritasa.SlackApp.DomainServices\Saritasa.SlackApp.DomainServices.csproj" />
+    <ProjectReference Include="..\Saritasa.SlackApp.Infrastructure.Abstractions\Saritasa.SlackApp.Infrastructure.Abstractions.csproj" />
+    <ProjectReference Include="..\Saritasa.SlackApp.UseCases.Common\Saritasa.SlackApp.UseCases.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="**\*.html" />
+  </ItemGroup>
+
+</Project>

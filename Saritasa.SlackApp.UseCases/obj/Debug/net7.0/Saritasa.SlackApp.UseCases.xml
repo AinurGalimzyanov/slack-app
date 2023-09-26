@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Saritasa.SlackApp.UseCases</name>
+    </assembly>
+    <members>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.Dto.UserDayDto">
+            <summary>
+            User day dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.Dto.UserDayDto.Capacity">
+            <summary>
+            Capacity.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.Dto.UserDayDto.Duration">
+            <summary>
+            Duration of paid jobs.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.Dto.UserDayDto.Date">
+            <summary>
+            Date.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.Dto.UserMonthDto">
+            <summary>
+            User month dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.Dto.UserMonthDto.LastWorkMonth">
+            <summary>
+            Days.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.GetNonBillableDaysQuery">
+            <summary>
+            Query value for get non billable days.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.GetNonBillableDaysQuery.Email">
+            <summary>
+            Email.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.GetNonBillableDaysQuery.UserId">
+            <summary>
+            User id.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.GetNonBillableDaysQueryHandler">
+            <summary>
+             Output of all user non-billable days.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.GetNonBillableDaysQueryHandler.#ctor(Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.ICrmClient,AutoMapper.IMapper,SlackNet.ISlackApiClient)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.GetNonBillableDaysQueryHandler.Handle(Saritasa.SlackApp.UseCases.Slack.GetNonBillableDays.GetNonBillableDaysQuery,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQuery">
+            <summary>
+            Get planner query.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQuery.Email">
+            <summary>
+            User email to request planner data.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQuery.UserId">
+            <summary>
+            User id in slack.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQueryHandler">
+            <summary>
+            Handler for get planner query.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQueryHandler.#ctor(SlackNet.ISlackApiClient,Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Crm.ICrmClient,AutoMapper.IMapper)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="slackApiClient">Slack api client.</param>
+            <param name="crmClient">Crm client.</param>
+            <param name="mapper">Mapper.</param>
+        </member>
+        <member name="M:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQueryHandler.Handle(Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQuery,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQueryResultDto">
+            <summary>
+            Get planner query dto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.GetPlannerQueryResultDto.ProjectDtos">
+            <summary>
+            ProjectDto dtos.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.ProjectDto">
+            <summary>
+            ProjectDto.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.ProjectDto.ProjectName">
+            <summary>
+            ProjectDto name.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.ProjectDto.AssignedTime">
+            <summary>
+            Assigned hours.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.ProjectDto.TimeSpent">
+            <summary>
+            Spent minutes.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.GetPlannerQuery.ProjectDto.EditedAt">
+            <summary>
+            Edited at.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.SlackEventCommand.SlackEventCommand">
+            <summary>
+            Command for publish slack app page..
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.SlackEventCommand.SlackEventCommand.EventType">
+            <summary>
+            Event type.
+            </summary>
+        </member>
+        <member name="P:Saritasa.SlackApp.UseCases.Slack.SlackEventCommand.SlackEventCommand.Event">
+            <summary>
+            Event.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.SlackEventCommand.SlackEventCommandHandler">
+            <summary>
+            Publish slack app page.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.UseCases.Slack.SlackEventCommand.SlackEventCommandHandler.#ctor(Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackViewPublisher,Saritasa.SlackApp.Infrastructure.Abstractions.Interfaces.Slack.ISlackViewService,Microsoft.Extensions.Logging.ILogger{Saritasa.SlackApp.UseCases.Slack.SlackEventCommand.SlackEventCommandHandler})">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.UseCases.Slack.SlackEventCommand.SlackEventCommandHandler.Handle(Saritasa.SlackApp.UseCases.Slack.SlackEventCommand.SlackEventCommand,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Slack.SlackMappingProfile">
+            <summary>
+            Slack mapping profile.
+            </summary>
+        </member>
+        <member name="M:Saritasa.SlackApp.UseCases.Slack.SlackMappingProfile.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="T:Saritasa.SlackApp.UseCases.Temp">
+            <summary>
+            Temporary class to reference the UseCases assembly.
+            TODO: remove it.
+            </summary>
+        </member>
+    </members>
+</doc>

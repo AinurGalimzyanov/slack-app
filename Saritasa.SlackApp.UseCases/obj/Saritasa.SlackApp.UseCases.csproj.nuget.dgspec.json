@@ -1,0 +1,390 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases\\Saritasa.SlackApp.UseCases.csproj": {}
+  },
+  "projects": {
+    "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.DomainServices\\Saritasa.SlackApp.DomainServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.DomainServices\\Saritasa.SlackApp.DomainServices.csproj",
+        "projectName": "Saritasa.SlackApp.DomainServices",
+        "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.DomainServices\\Saritasa.SlackApp.DomainServices.csproj",
+        "packagesPath": "C:\\Users\\79373\\.nuget\\packages\\",
+        "outputPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.DomainServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\79373\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers.Unstable": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0.507, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj",
+        "projectName": "Saritasa.SlackApp.Domain",
+        "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\79373\\.nuget\\packages\\",
+        "outputPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\79373\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Saritasa.Tools.Common": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Saritasa.Tools.Domain": {
+              "target": "Package",
+              "version": "[0.8.2, )"
+            },
+            "StyleCop.Analyzers.Unstable": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0.507, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Infrastructure.Abstractions\\Saritasa.SlackApp.Infrastructure.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Infrastructure.Abstractions\\Saritasa.SlackApp.Infrastructure.Abstractions.csproj",
+        "projectName": "Saritasa.SlackApp.Infrastructure.Abstractions",
+        "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Infrastructure.Abstractions\\Saritasa.SlackApp.Infrastructure.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\79373\\.nuget\\packages\\",
+        "outputPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Infrastructure.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\79373\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj": {
+                "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "SlackNet": {
+              "target": "Package",
+              "version": "[0.11.1, )"
+            },
+            "StyleCop.Analyzers.Unstable": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0.507, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases.Common\\Saritasa.SlackApp.UseCases.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases.Common\\Saritasa.SlackApp.UseCases.Common.csproj",
+        "projectName": "Saritasa.SlackApp.UseCases.Common",
+        "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases.Common\\Saritasa.SlackApp.UseCases.Common.csproj",
+        "packagesPath": "C:\\Users\\79373\\.nuget\\packages\\",
+        "outputPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\79373\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj": {
+                "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Domain\\Saritasa.SlackApp.Domain.csproj"
+              },
+              "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Infrastructure.Abstractions\\Saritasa.SlackApp.Infrastructure.Abstractions.csproj": {
+                "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Infrastructure.Abstractions\\Saritasa.SlackApp.Infrastructure.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "StyleCop.Analyzers.Unstable": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0.507, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases\\Saritasa.SlackApp.UseCases.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases\\Saritasa.SlackApp.UseCases.csproj",
+        "projectName": "Saritasa.SlackApp.UseCases",
+        "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases\\Saritasa.SlackApp.UseCases.csproj",
+        "packagesPath": "C:\\Users\\79373\\.nuget\\packages\\",
+        "outputPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\79373\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.DomainServices\\Saritasa.SlackApp.DomainServices.csproj": {
+                "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.DomainServices\\Saritasa.SlackApp.DomainServices.csproj"
+              },
+              "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Infrastructure.Abstractions\\Saritasa.SlackApp.Infrastructure.Abstractions.csproj": {
+                "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.Infrastructure.Abstractions\\Saritasa.SlackApp.Infrastructure.Abstractions.csproj"
+              },
+              "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases.Common\\Saritasa.SlackApp.UseCases.Common.csproj": {
+                "projectPath": "E:\\cump\\saritasa-crm-slack-app\\src\\Saritasa.SlackApp.UseCases.Common\\Saritasa.SlackApp.UseCases.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "NodaTime": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Saritasa.Tools.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "StyleCop.Analyzers.Unstable": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0.507, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
